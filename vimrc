@@ -47,7 +47,11 @@ set splitright
 set complete+=kspell
 
 " Always use vertical diffs
-set diffopt+=vertical
+" catalina not support diffopt=internal
+if &diff
+    set diffopt-=internal
+    set diffopt+=vertical
+endif
 
 " Copy to clipboard
 set clipboard=unnamed

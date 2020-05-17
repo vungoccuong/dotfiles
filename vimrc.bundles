@@ -19,6 +19,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'honza/vim-snippets'
 Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 
