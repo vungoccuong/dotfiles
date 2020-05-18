@@ -1,3 +1,5 @@
 {
-  "tsserver.implicitProjectConfig.experimentalDecorators": true
+  "tsserver.implicitProjectConfig.experimentalDecorators": true,
+  "prettier.formatterPriority": 1,
+  "coc.preferences.noselect": false
 }

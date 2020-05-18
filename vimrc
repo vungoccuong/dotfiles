@@ -200,3 +200,7 @@ let g:jsx_ext_required = 0
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+nmap <F2> <Plug>(coc-rename)
+let g:go_metalinter_autosave=1
+let g:go_metalinter_autosave_enabled=['golint', 'govet']

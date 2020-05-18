@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =0
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/vucuong/WebstormProjects/sidexchange'
+let g:netrw_dirhist_1='/Users/vucuong'
 let g:netrw_dirhist_0='/Users/vucuong/go/src/github.com/hirosume/testnvim'
 let g:netrw_dirhist_9='/Users/vucuong'
 let g:netrw_dirhist_8='/Users/vucuong/GolandProjects/gateway'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_6='/Users/vucuong/Downloads/dotfiles/vim'
 let g:netrw_dirhist_5='/Users/vucuong/Downloads/dotfiles/vim/bundle'
 let g:netrw_dirhist_4='/Users/vucuong/Downloads/dotfiles/vim/bundle/fzf.vim'
 let g:netrw_dirhist_3='/Users/vucuong/Downloads/dotfiles/vim/bundle'
-let g:netrw_dirhist_2='/Users/vucuong/Downloads/dotfiles/vim'
-let g:netrw_dirhist_1='/Users/vucuong/Downloads/dotfiles'

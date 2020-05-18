@@ -69,7 +69,7 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm npm docker zsh-autosuggestions zsh-syntax-highlighting vi-mode)
+plugins=(git nvm npm docker zsh-autosuggestions zsh-syntax-highlighting vi-mode golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,17 +100,12 @@ export EDITOR="nvim"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
+export GOPATH="$HOME/go"
 export PATH=$GOPATH/bin:$PATH
-#export PATH=$PATH:$(go env GOPATH)/bin
-#export GOPATH=$(go env GOPATH)
-#export GOPATH="$HOME/go"
-export GOROOT=/usr/local/go
-export GOBIN=$GOROOT/bin
-#export GOPATH=$HOME/golang
-#export PATH=$PATH:$GOBIN
-#export PATH=$PATH:~/development/flutter/bin
+#export GOROOT="$HOME/go"
+export GOBIN=$GOPATH/bin
 
-source /Users/vucuong/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /Users/vucuong/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
