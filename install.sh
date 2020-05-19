@@ -87,7 +87,7 @@ function backup {
 
 function link_dotfiles {
   echo "Linking dotfiles"
-
+  ln -s $(pwd)/alacritty  ~/.config/
   ln -s $(pwd)/zshrc ~/.zshrc
   ln -s $(pwd)/tmux.conf ~/.tmux.conf
   ln -s $(pwd)/vim ~/.vim
