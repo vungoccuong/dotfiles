@@ -117,3 +117,14 @@ export PATH=$PATH:$HOME/.composer/vendor/bin
 
 alias vi="nvim"
 alias vim="nvim"
+
+export LANG="en_US.UTF-8"
+export LC_COLLATE="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export  LC_ALL="en_US.UTF-8"
+#fix tmux not showing special character
+#alias tmux='tmux -u'
