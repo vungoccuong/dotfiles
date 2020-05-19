@@ -201,6 +201,22 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
+
+"rename 
 nmap <F2> <Plug>(coc-rename)
 let g:go_metalinter_autosave=1
-let g:go_metalinter_autosave_enabled=['golint', 'govet']
+let g:go_metalinter_autosave_enabled=['vet', 'golint']
+let g:go_metalinter_deadline = "5s"
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+" use go imports when saving file
+let g:go_fmt_command = "goimports"
+" coloring syntax
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+
+

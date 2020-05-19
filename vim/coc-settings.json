@@ -1,5 +1,12 @@
 {
+  "suggest.noselect": false,
   "tsserver.implicitProjectConfig.experimentalDecorators": true,
   "prettier.formatterPriority": 1,
-  "coc.preferences.noselect": false
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+  }
 }

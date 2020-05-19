@@ -21,6 +21,7 @@ Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'chrisbra/vim-commentary'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 

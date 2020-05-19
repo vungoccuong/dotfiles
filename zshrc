@@ -114,3 +114,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$PATH:$HOME/.composer/vendor/bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias vi="nvim"
+alias vim="nvim"
