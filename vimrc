@@ -138,6 +138,9 @@ nnoremap \ :Ag<SPACE>
 " coc.vim config
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
@@ -204,7 +207,7 @@ endif
 
 "rename 
 nmap <F2> <Plug>(coc-rename)
-let g:go_metalinter_autosave=1
+let g:go_metalinter_autosave=0
 let g:go_metalinter_autosave_enabled=['vet', 'golint']
 let g:go_metalinter_deadline = "5s"
 let g:go_def_mode='gopls'
