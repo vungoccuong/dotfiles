@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/vucuong'
 let g:netrw_dirhist_6='/Users/vucuong/GolandProjects/gateway'
 let g:netrw_dirhist_5='/Users/vucuong/GolandProjects/gateway/cmd/gateway'
 let g:netrw_dirhist_4='/Users/vucuong/GolandProjects/gateway/cmd'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_1='/Users/vucuong'
 let g:netrw_dirhist_0='/Users/vucuong/go/src/github.com/hirosume/testnvim'
 let g:netrw_dirhist_9='/Users/vucuong'
 let g:netrw_dirhist_8='/Users/vucuong/GolandProjects/gateway'
-let g:netrw_dirhist_7='/Users/vucuong/Downloads/dotfiles'

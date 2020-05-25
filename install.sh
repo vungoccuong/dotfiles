@@ -93,6 +93,9 @@ function link_dotfiles {
   ln -s $(pwd)/vim ~/.vim
   ln -s $(pwd)/vimrc ~/.vimrc
   ln -s $(pwd)/vimrc.bundles ~/.vimrc.bundles
+  ln -s $(pwd)/bin/tmux-session /usr/local/bin
+
+  chmod +x /usr/local/bin/tmux-session
 
   echo "Installing oh-my-zsh"
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
