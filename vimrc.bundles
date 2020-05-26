@@ -22,6 +22,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'chrisbra/vim-commentary'
 Plug 'SirVer/ultisnips'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'jiangmiao/auto-pairs'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 call plug#end()
 
