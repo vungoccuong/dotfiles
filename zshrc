@@ -128,3 +128,6 @@ export LC_TIME="en_US.UTF-8"
 export  LC_ALL="en_US.UTF-8"
 #fix tmux not showing special character
 #alias tmux='tmux -u'
+export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+#export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'

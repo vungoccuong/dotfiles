@@ -69,6 +69,12 @@ function install_macos {
       pip3 install neovim --upgrade
     fi
   fi
+
+  if [ "$(is_installed  fd)" == "0"  ]; then
+    echo "Install fd"
+    brew install fd
+  fi
+
 }
 
 function backup {
