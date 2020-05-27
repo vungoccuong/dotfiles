@@ -21,11 +21,18 @@ Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'chrisbra/vim-commentary'
+" ES2015 code snippets (Optional)
+Plug 'epilande/vim-es2015-snippets'
+
+" React code snippets
+"Plug 'epilande/vim-react-snippets'
+
 Plug 'SirVer/ultisnips'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'jiangmiao/auto-pairs'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'https://github.com/Galooshi/vim-import-js.git'
 
 call plug#end()
 
