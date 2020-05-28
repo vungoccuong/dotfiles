@@ -100,6 +100,7 @@ function link_dotfiles {
   ln -s $(pwd)/vimrc ~/.vimrc
   ln -s $(pwd)/vimrc.bundles ~/.vimrc.bundles
   ln -s $(pwd)/bin/tmux-session /usr/local/bin
+  ln -s ~/.vim/bundle/gruvbox/colors/gruvbox.vim ~/.vim/colors/
 
   chmod +x /usr/local/bin/tmux-session
 
@@ -110,6 +111,8 @@ function link_dotfiles {
     echo "Installing zsh-autosuggestions"
     git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
   fi
+
+  curl -L https://raw.githubusercontent.com/sbugzu/gruvbox-zsh/master/gruvbox.zsh-theme > ~/.oh-my-zsh/custom/themes/gruvbox.zsh-theme
 
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 

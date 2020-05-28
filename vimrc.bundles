@@ -33,6 +33,7 @@ Plug 'mxw/vim-jsx'
 Plug 'jiangmiao/auto-pairs'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'https://github.com/Galooshi/vim-import-js.git'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 

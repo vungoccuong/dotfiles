@@ -61,7 +61,8 @@ set termguicolors
 
 set background=dark
 
-colorscheme dracula
+"colorscheme dracula
+colorscheme gruvbox
 
 filetype plugin indent on
 
@@ -231,4 +232,5 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:coc_global_extensions = [
       \ 'coc-tsserver'
       \]
-
+" autocomplete css
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
