@@ -30,7 +30,7 @@ Plug 'epilande/vim-es2015-snippets'
 Plug 'SirVer/ultisnips'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'https://github.com/Galooshi/vim-import-js.git'
 Plug 'morhetz/gruvbox'

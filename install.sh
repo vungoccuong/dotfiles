@@ -74,7 +74,8 @@ function install_macos {
     echo "Install fd"
     brew install fd
   fi
-
+  echo "install import js"
+  npm i -g import-js
 }
 
 function backup {

@@ -1,0 +1,1 @@
+/Users/vucuong/.vim/bundle/gruvbox/colors/gruvbox.vim

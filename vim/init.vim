@@ -1,1 +1,1 @@
-/Users/vucuong/Downloads/dotfiles/vimrc
+/Users/vucuong/Documents/dotfiles/vimrc

@@ -132,7 +132,7 @@ noremap ` :Files<CR>
 noremap ; :Buffers<CR>
 
 " bind \ (backward slash) to grep shortcut
-nnoremap K :Ag <C-R><C-W><CR>
+nnoremap KK :Ag <C-R><C-W><CR>
 nnoremap <C-k> /<C-R><C-W><CR>
 nnoremap \ :Ag<SPACE>
 
@@ -142,7 +142,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-nmap <leader>rn <Plug>(coc-rename)
+nmap <leader> rn <Plug>(coc-rename)
 
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')

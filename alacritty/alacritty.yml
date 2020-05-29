@@ -54,7 +54,7 @@ colors:
     white:   '0xdfbf8e'
 
 font:
-  size: 12.0
+  size: 13.0
   # Normal (roman) font face
   normal:
     # Font family
