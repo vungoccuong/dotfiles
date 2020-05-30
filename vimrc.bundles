@@ -20,17 +20,17 @@ Plug 'honza/vim-snippets'
 Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'chrisbra/vim-commentary'
+" Plug 'chrisbra/vim-commentary'
 " ES2015 code snippets (Optional)
 Plug 'epilande/vim-es2015-snippets'
 
-" React code snippets
-"Plug 'epilande/vim-react-snippets'
-
 Plug 'SirVer/ultisnips'
+" syntax highlighting
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-"Plug 'jiangmiao/auto-pairs'
+
+" React code snippets
+Plug 'epilande/vim-react-snippets'
+
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'https://github.com/Galooshi/vim-import-js.git'
 Plug 'morhetz/gruvbox'

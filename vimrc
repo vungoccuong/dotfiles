@@ -230,7 +230,13 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 let g:coc_global_extensions = [
-      \ 'coc-tsserver'
+      \ 'coc-tsserver',
+      \ 'coc-pairs',
+      \ 'coc-go',
+      \ 'coc-json',
+      \ 'coc-css'
       \]
 " autocomplete css
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+"autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
