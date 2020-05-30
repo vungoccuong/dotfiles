@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/bundle')
 
 " Define bundles via Github repos
+Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-surround'
 Plug 'alvan/vim-closetag'
@@ -16,24 +17,21 @@ Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'dracula/vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'honza/vim-snippets'
 Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-" Plug 'chrisbra/vim-commentary'
-" ES2015 code snippets (Optional)
-Plug 'epilande/vim-es2015-snippets'
-
-Plug 'SirVer/ultisnips'
+Plug 'https://github.com/Galooshi/vim-import-js.git'
+Plug 'tpope/vim-commentary'
 " syntax highlighting
 Plug 'pangloss/vim-javascript'
-
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+" ES2015 code snippets (Optional)
+Plug 'epilande/vim-es2015-snippets'
 " React code snippets
 Plug 'epilande/vim-react-snippets'
-
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'https://github.com/Galooshi/vim-import-js.git'
-Plug 'morhetz/gruvbox'
+"Plug 'neoclide/coc-snippets'
 
 call plug#end()
 

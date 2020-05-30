@@ -28,6 +28,10 @@ set expandtab
 set textwidth=120
 set colorcolumn=+1
 
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=301
+
 " Display extra whitespace
 " set list listchars=tab:»·,trail:·,nbsp:·
 
@@ -143,6 +147,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <leader> rn <Plug>(coc-rename)
+nmap <F2> <Plug>(coc-rename)
 
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
@@ -159,7 +164,7 @@ map / <Plug>(easymotion-sn)
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'darcula',
+      \ 'colorscheme': 'gruvbox',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ],
@@ -207,8 +212,6 @@ if filereadable($HOME . "/.vimrc.local")
 endif
 
 
-"rename 
-nmap <F2> <Plug>(coc-rename)
 let g:go_metalinter_autosave=0
 let g:go_metalinter_autosave_enabled=['vet', 'golint']
 let g:go_metalinter_deadline = "5s"
@@ -218,7 +221,7 @@ let g:go_info_mode='gopls'
 let g:go_fmt_command = "goimports"
 " coloring syntax
 let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
+let g:no_highlight_fields = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
@@ -234,9 +237,14 @@ let g:coc_global_extensions = [
       \ 'coc-pairs',
       \ 'coc-go',
       \ 'coc-json',
-      \ 'coc-css'
+      \ 'coc-css',
+      \ 'coc-eslint',
+      \ 'coc-prettier',
+      \ 'coc-snippets'
       \]
 " autocomplete css
-"autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
+
