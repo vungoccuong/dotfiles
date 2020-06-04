@@ -247,4 +247,4 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
-
+nnoremap Gr :GoRun <CR>
