@@ -32,6 +32,7 @@ Plug 'epilande/vim-es2015-snippets'
 Plug 'epilande/vim-react-snippets'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 "Plug 'neoclide/coc-snippets'
+Plug 'tpope/vim-obsession'
 
 call plug#end()
 
