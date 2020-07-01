@@ -100,6 +100,7 @@ function link_dotfiles {
   ln -s $(pwd)/vim ~/.vim
   ln -s $(pwd)/vimrc ~/.vimrc
   ln -s $(pwd)/vimrc.bundles ~/.vimrc.bundles
+  ln -s $(pwd)/ideavimrc ~/.ideavimrc
   ln -s $(pwd)/bin/tmux-session /usr/local/bin
   ln -s ~/.vim/bundle/gruvbox/colors/gruvbox.vim ~/.vim/colors/
 

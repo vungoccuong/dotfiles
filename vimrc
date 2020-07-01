@@ -25,7 +25,7 @@ set shiftround
 set expandtab
 
 " Make it obvious where 80 characters is
-set textwidth=20
+set textwidth=120
 set colorcolumn=+1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
@@ -212,8 +212,8 @@ if filereadable($HOME . "/.vimrc.local")
 endif
 
 
-let g:go_metalinter_autosave=0
-let g:go_metalinter_autosave_enabled=['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave=1
+let g:go_metalinter_autosave_enabled=[]
 let g:go_metalinter_deadline = "5s"
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
