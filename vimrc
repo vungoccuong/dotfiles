@@ -65,8 +65,6 @@ set termguicolors
 
 set background=dark
 
-"colorscheme dracula
-colorscheme gruvbox
 
 filetype plugin indent on
 
@@ -79,6 +77,9 @@ endif
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
+
+colorscheme gruvbox
+
 
 augroup vimrcEx
   autocmd!

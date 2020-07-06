@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/hirosume'
+let g:netrw_dirhist_7='/home/hirosume/dotfiles'
 let g:netrw_dirhist_6='/Users/vucuong'
 let g:netrw_dirhist_5='/Users/vucuong/Documents/dotfiles'
 let g:netrw_dirhist_4='/Users/vucuong/Downloads/dotfiles'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_2='/Users/vucuong/Downloads/dotfiles'
 let g:netrw_dirhist_1='/Users/vucuong/.tmux'
 let g:netrw_dirhist_0='/Users/vucuong'
 let g:netrw_dirhist_9='/Users/vucuong/WebstormProjects/crm-ui/src'
-let g:netrw_dirhist_8='/Users/vucuong/WebstormProjects/crm-ui'
-let g:netrw_dirhist_7='/Users/vucuong'

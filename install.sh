@@ -78,6 +78,53 @@ function install_macos {
   npm i -g import-js
 }
 
+function install_linux {
+  if [[ $OSTYPE != linux* ]]; then
+    return
+  fi
+
+  if [ "$(is_installed zsh)" == "0" ]; then
+    echo "Installing zsh"
+    sudo apt install zsh zsh-completions
+  fi
+
+  if [ "$(is_installed ag)" == "0" ]; then
+    echo "Installing The silver searcher"
+    sudo apt install silversearcher-ag
+  fi
+
+  if [ "$(is_installed fzf)" == "0" ]; then
+    echo "Installing fzf"
+    sudo apt install fzf
+  fi
+
+  if [ "$(is_installed tmux)" == "0" ]; then
+    echo "Installing tmux"
+    sudo apt install tmux
+    echo "Installing tmux-plugin-manager"
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  fi
+
+
+  if [ "$(is_installed nvim)" == "0" ]; then
+    echo "Install neovim"
+    sudo apt install neovim
+    if [ "$(is_installed pip3)" == "1" ]; then
+      pip3 install neovim --upgrade
+    fi
+  fi
+
+  if [ "$(is_installed  fd)" == "0"  ]; then
+    echo "Install fd"
+    sudo apt install fd-find
+  fi
+
+  if [ "$(is_installed npm)" == "0" ]; then
+    echo "install import js"
+    npm i -g import-js
+  fi
+}
+
 function backup {
   echo "Backing up dotfiles"
   local current_date=$(date +%s)
@@ -104,7 +151,7 @@ function link_dotfiles {
   ln -s $(pwd)/bin/tmux-session /usr/local/bin
   ln -s ~/.vim/bundle/gruvbox/colors/gruvbox.vim ~/.vim/colors/
 
-  chmod +x /usr/local/bin/tmux-session
+  #chmod +x /usr/local/bin/tmux-session
 
   echo "Installing oh-my-zsh"
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -133,6 +180,14 @@ while test $# -gt 0; do
       ;;
     --macos)
       install_macos
+      backup
+      link_dotfiles
+      zsh
+      source ~/.zshrc
+      exit
+      ;;
+    --linux)
+      install_linux
       backup
       link_dotfiles
       zsh

@@ -107,6 +107,8 @@ export PATH=$GOPATH/bin:$PATH
 #export GOROOT="$HOME/go"
 export GOBIN=$GOPATH/bin
 
+export PATH=$PATH:$HOME/.cargo/bin
+
 #source /Users/vucuong/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export NVM_DIR="$HOME/.nvm"
@@ -135,3 +137,4 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 #
 alias tmuxk="tmux kill-session"
+fpath+=${ZDOTDIR:-~}/.zsh_functions
