@@ -33,6 +33,7 @@ Plug 'epilande/vim-react-snippets'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 "Plug 'neoclide/coc-snippets'
 Plug 'tpope/vim-obsession'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 

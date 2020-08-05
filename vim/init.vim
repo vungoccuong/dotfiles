@@ -1,1 +1,1 @@
-/home/hirosume/dotfiles/vimrc
+/home/hirosume/Documents/dotfiles/vimrc
