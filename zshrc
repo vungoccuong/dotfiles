@@ -138,3 +138,5 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #
 alias tmuxk="tmux kill-session"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+export QT_QPA_PLATFORMTHEME=qt5ct

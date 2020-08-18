@@ -214,7 +214,7 @@ endif
 
 
 let g:go_metalinter_autosave=1
-let g:go_metalinter_autosave_enabled=[]
+" let g:go_metalinter_autosave_enabled=[]
 let g:go_metalinter_deadline = "5s"
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
@@ -248,3 +248,6 @@ autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 nnoremap Gr :GoRun <CR>
+" save and reload buffer
+nnoremap <Leader>e :w \| :e <CR>
+
