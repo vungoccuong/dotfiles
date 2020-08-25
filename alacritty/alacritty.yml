@@ -67,5 +67,6 @@ font:
 
     # The `style` can be specified to pick a specific face.
     style: Regular
-
-
+env:
+  WINIT_UNIX_BACKEND: "x11"
+  WINIT_X11_SCALE_FACTOR: "1"
