@@ -58,7 +58,8 @@ if &diff
 endif
 
 " Copy to clipboard
-set clipboard=unnamed
+"set clipboard=unnamed
+set clipboard+=unnamedplus
 
 set lazyredraw
 set termguicolors
@@ -250,4 +251,4 @@ autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 nnoremap Gr :GoRun <CR>
 " save and reload buffer
 nnoremap <Leader>e :w \| :e <CR>
-
+nmap <F8> :TagbarToggle<CR>

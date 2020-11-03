@@ -71,7 +71,7 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm npm docker zsh-autosuggestions zsh-syntax-highlighting vi-mode golang docker-compose)
+plugins=(git nvm npm docker zsh-autosuggestions zsh-syntax-highlighting vi-mode golang docker-compose fd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -139,8 +139,3 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 alias tmuxk="tmux kill-session"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-export QT_QPA_PLATFORMTHEME=qt5ct
-
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus

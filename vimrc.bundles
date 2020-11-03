@@ -35,6 +35,8 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'tpope/vim-obsession'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'wakatime/vim-wakatime'
+Plug 'majutsushi/tagbar'
+"Plug 'bling/vim-airline'
 
 call plug#end()
 
