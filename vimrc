@@ -125,7 +125,7 @@ nnoremap <Leader>\ :vsplit<CR>
 nnoremap <Leader>/ :split<CR>
 
 " Remove highlight
-map <C-h> :nohl<CR>
+"map <C-h> :nohl<CR>
 
 " NERD tree configuration
 noremap <C-d> :NERDTreeToggle<CR>
@@ -166,7 +166,7 @@ map / <Plug>(easymotion-sn)
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'seoul256',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ],
@@ -215,8 +215,8 @@ endif
 
 
 let g:go_metalinter_autosave=1
-" let g:go_metalinter_autosave_enabled=[]
-let g:go_metalinter_deadline = "5s"
+let g:go_metalinter_autosave_enabled=['vet', 'golint']
+let g:go_metalinter_deadline = "10s"
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 " use go imports when saving file
@@ -252,3 +252,13 @@ nnoremap Gr :GoRun <CR>
 " save and reload buffer
 nnoremap <Leader>e :w \| :e <CR>
 nmap <F8> :TagbarToggle<CR>
+
+let g:rainbow_active = 1
+
+let g:rainbow_load_separately = [
+    \ [ '*' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+    \ [ '*.tex' , [['(', ')'], ['\[', '\]']] ],
+    \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+    \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
+    \ ]
+

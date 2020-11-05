@@ -37,8 +37,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'wakatime/vim-wakatime'
 Plug 'majutsushi/tagbar'
 "Plug 'bling/vim-airline'
-
+Plug 'frazrepo/vim-rainbow'
 call plug#end()
+
 
 " Local config
 if filereadable($HOME . "/.vimrc.bundles.local")
