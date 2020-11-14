@@ -85,22 +85,22 @@ function install_debian {
 
   if [ "$(is_installed zsh)" == "0" ]; then
     echo "Installing zsh"
-    sudo apt install zsh zsh-completions
+    sudo apt install zsh zsh-completions -y
   fi
 
   if [ "$(is_installed ag)" == "0" ]; then
     echo "Installing The silver searcher"
-    sudo apt install silversearcher-ag
+    sudo apt install silversearcher-aga -y
   fi
 
   if [ "$(is_installed fzf)" == "0" ]; then
     echo "Installing fzf"
-    sudo apt install fzf
+    sudo apt install fzf -y
   fi
 
   if [ "$(is_installed tmux)" == "0" ]; then
     echo "Installing tmux"
-    sudo apt install tmux
+    sudo apt install tmux -y
     echo "Installing tmux-plugin-manager"
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
   fi
@@ -108,7 +108,7 @@ function install_debian {
 
   if [ "$(is_installed nvim)" == "0" ]; then
     echo "Install neovim"
-    sudo apt install neovim
+    sudo apt install neovim -y
     if [ "$(is_installed pip3)" == "1" ]; then
       pip3 install neovim --upgrade
     fi
@@ -119,7 +119,16 @@ function install_debian {
     sudo apt install fd-find
   fi
 
+  if [ "$(is_installed  fd)" == "1"  ]; then
+    echo "Install lazygit"
+    sudo add-apt-repository ppa:lazygit-team/release
+    sudo apt-get update
+    sudo apt-get install lazygit
+  fi
+
+
   if [ "$(is_installed npm)" == "0" ]; then
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
     echo "install import js"
     npm i -g import-js
   fi
@@ -165,6 +174,7 @@ function install_arch {
     echo "Install fd"
     sudo pacman -S fd
   fi
+
 
   if [ "$(is_installed npm)" == "0" ]; then
     echo "install import js"

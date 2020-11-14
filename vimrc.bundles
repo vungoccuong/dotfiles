@@ -15,7 +15,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'dracula/vim'
+"Plug 'dracula/vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -31,13 +31,22 @@ Plug 'epilande/vim-es2015-snippets'
 " React code snippets
 Plug 'epilande/vim-react-snippets'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-"Plug 'neoclide/coc-snippets'
 Plug 'tpope/vim-obsession'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'wakatime/vim-wakatime'
 Plug 'majutsushi/tagbar'
 "Plug 'bling/vim-airline'
 Plug 'frazrepo/vim-rainbow'
+Plug 'ryanoasis/vim-devicons'
+Plug 'leafgarland/typescript-vim'
+Plug 'ianks/vim-tsx'
+Plug 'leafgarland/typescript-vim'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'roxma/vim-tmux-clipboard'
+Plug 'szw/vim-maximizer'
+Plug 'mattn/emmet-vim'
+Plug 'voldikss/vim-floaterm'
+
 call plug#end()
 
 

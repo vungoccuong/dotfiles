@@ -138,4 +138,16 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #
 alias tmuxk="tmux kill-session"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+eval "$(starship init zsh)"
 
+lg()
+{
+    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
+
+    lazygit "$@"
+
+    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
+            cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
+            rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
+    fi
+}

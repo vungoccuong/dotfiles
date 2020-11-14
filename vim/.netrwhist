@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/etc/systemd/system'
 let g:netrw_dirhist_9='/home/hirosume/Documents/dotfiles'
 let g:netrw_dirhist_8='/home/hirosume'
 let g:netrw_dirhist_7='/home/hirosume/dotfiles'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_4='/Users/vucuong/Downloads/dotfiles'
 let g:netrw_dirhist_3='/Users/vucuong'
 let g:netrw_dirhist_2='/Users/vucuong/Downloads/dotfiles'
 let g:netrw_dirhist_1='/Users/vucuong/.tmux'
-let g:netrw_dirhist_0='/Users/vucuong'
