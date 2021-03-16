@@ -129,12 +129,6 @@ nnoremap <Leader>/ :split<CR>
 " Remove highlight
 "map <C-h> :nohl<CR>
 
-" NERD tree configuration
-noremap <C-d> :NERDTreeToggle<CR>
-nnoremap F :NERDTreeFind<CR>
-
-let NERDTreeShowHidden=1
-
 " fzf
 noremap ` :Files<CR>
 noremap ; :Buffers<CR>
@@ -232,24 +226,37 @@ let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 "auto open nerdtree when vim startup on open directory
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+"autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 "auto close nerdtree if the only nerdtree window is open
-autocmd bufenter * if (winnr("$") == 3 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"autocmd bufenter * if (winnr("$") == 3 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+noremap <C-d> :NERDTreeToggle<CR>
+nnoremap F :NERDTreeFind<CR>
+let NERDTreeShowHidden=1
 let g:coc_global_extensions = [
-      \ 'coc-tsserver',
       \ 'coc-pairs',
       \ 'coc-go',
       \ 'coc-json',
       \ 'coc-css',
-      \ 'coc-prettier',
       \ 'coc-snippets',
       \ 'coc-html',
       \ 'coc-highlight',
       \ 'coc-tabnine',
-      \ 'coc-emmet',
-      \ 'coc-tslint-plugin'
+      \ 'coc-emmet'
       \]
+
+if isdirectory('./node_modules')
+  let g:coc_global_extensions += ['coc-tsserver', 'coc-tslint-plugin']
+endif
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
+endif
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
+
 " autocomplete css
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
@@ -296,3 +303,6 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
+
+nnoremap <silent> K :call CocAction('doHover')<CR>
+

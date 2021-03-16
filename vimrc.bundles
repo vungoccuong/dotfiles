@@ -9,43 +9,34 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 Plug 'easymotion/vim-easymotion'
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
-"Plug 'dracula/vim'
+
+Plug 'SirVer/ultisnips'
+Plug 'mlaursen/vim-react-snippets'
+
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'sheerun/vim-polyglot'
 Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'https://github.com/Galooshi/vim-import-js.git'
 Plug 'tpope/vim-commentary'
-" syntax highlighting
-Plug 'pangloss/vim-javascript'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-" ES2015 code snippets (Optional)
-Plug 'epilande/vim-es2015-snippets'
-" React code snippets
-Plug 'epilande/vim-react-snippets'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'tpope/vim-obsession'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'wakatime/vim-wakatime'
 Plug 'majutsushi/tagbar'
-"Plug 'bling/vim-airline'
 Plug 'frazrepo/vim-rainbow'
 Plug 'ryanoasis/vim-devicons'
-Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
-Plug 'leafgarland/typescript-vim'
 Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'roxma/vim-tmux-clipboard'
-Plug 'szw/vim-maximizer'
-Plug 'mattn/emmet-vim'
 Plug 'voldikss/vim-floaterm'
+Plug 'roxma/vim-tmux-clipboard'
 
 call plug#end()
 

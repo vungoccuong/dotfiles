@@ -132,8 +132,8 @@ export LC_TIME="en_US.UTF-8"
 export  LC_ALL="en_US.UTF-8"
 #fix tmux not showing special character
 #alias tmux='tmux -u'
-export FZF_DEFAULT_COMMAND='fd --type f'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+#export FZF_DEFAULT_COMMAND='fd --type f'
+#export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 #
 alias tmuxk="tmux kill-session"
@@ -151,3 +151,6 @@ lg()
             rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
     fi
 }
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+export PATH="$PATH:/opt/oracle/instantclient_21_1"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/oracle/instantclient_21_1"

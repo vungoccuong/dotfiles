@@ -54,7 +54,7 @@ colors:
     white:   '0xdfbf8e'
 
 font:
-  size: 14.0
+  size: 11.0
   # Normal (roman) font face
   normal:
     # Font family
@@ -66,8 +66,11 @@ font:
     family: 'Iosevka'
 
     # The `style` can be specified to pick a specific face.
-    #    style: Regular
-    style: Semibold
+    style: Medium
+    # style: Semibold
     #env:
   WINIT_UNIX_BACKEND: "x11"
   WINIT_X11_SCALE_FACTOR: "1"
+INIT_X11_SCALE_FACTOR: "1"
+OR: "1"
+INIT_X11_SCALE_FACTOR: "1"
