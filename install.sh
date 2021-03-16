@@ -90,7 +90,7 @@ function install_debian {
 
   if [ "$(is_installed ag)" == "0" ]; then
     echo "Installing The silver searcher"
-    sudo apt install silversearcher-aga -y
+    sudo apt install silversearcher-ag -y
   fi
 
   if [ "$(is_installed fzf)" == "0" ]; then
