@@ -144,7 +144,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-"nmap <leader> rn <Plug>(coc-rename)
+nmap <leader> rn <Plug>(coc-rename)
 nmap <F2> <Plug>(coc-rename)
 
 " Use `:Format` to format current buffer
@@ -305,4 +305,39 @@ endfunction
 let g:coc_snippet_next = '<tab>'
 
 nnoremap <silent> K :call CocAction('doHover')<CR>
+set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
+autocmd BufNewFile,BufRead *.js set filetype=javascript.jsx
+autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+let g:closetag_xhtml_filetypes = 'xhtml,javascript.jsx,jsx'
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+  },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn",
+      node_incremental = "grn",
+      scope_incremental = "grc",
+      node_decremental = "grm",
+    },
+  },
+  indent = {
+    enable = true
+  },
+  refactor = {
+    highlight_definitions = { enable = true },
+    highlight_current_scope = { enable = true },
+    smart_rename = {
+      enable = true,
+      keymaps = {
+        smart_rename = "grr",
+      },
+    },
+  },
+}
+EOF
+
 

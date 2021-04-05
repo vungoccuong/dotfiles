@@ -132,9 +132,10 @@ export LC_TIME="en_US.UTF-8"
 export  LC_ALL="en_US.UTF-8"
 #fix tmux not showing special character
 #alias tmux='tmux -u'
-#export FZF_DEFAULT_COMMAND='fd --type f'
+#alias fd=fdfind
+export FZF_DEFAULT_COMMAND='fdfind --type f'
 #export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-#export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+#export FZF_DEFAULT_COMMAND='fd'
 #
 alias tmuxk="tmux kill-session"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
@@ -154,3 +155,7 @@ lg()
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 export PATH="$PATH:/opt/oracle/instantclient_21_1"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/oracle/instantclient_21_1"
+export GIT_TERMINAL_PROMPT=1
+export GOPRIVATE=github.com,gitlab.shopbase.dev
+export GO111MODULE=off
+export PATH="$PATH:$HOME/.local/bin"
