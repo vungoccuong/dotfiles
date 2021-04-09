@@ -242,7 +242,8 @@ let g:coc_global_extensions = [
       \ 'coc-html',
       \ 'coc-highlight',
       \ 'coc-tabnine',
-      \ 'coc-emmet'
+      \ 'coc-emmet',
+      \ 'coc-vetur'
       \]
 
 if isdirectory('./node_modules')
@@ -340,4 +341,19 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
+au BufRead,BufNewFile *.scss set filetype=scss.css
+autocmd FileType scss set iskeyword+=-
 
+let g:vim_vue_plugin_config = { 
+      \'syntax': {
+      \   'template': ['html'],
+      \   'script': ['javascript'],
+      \   'style': ['css'],
+      \},
+      \'full_syntax': [],
+      \'attribute': 0,
+      \'keyword': 0,
+      \'foldexpr': 0,
+      \'init_indent': 0,
+      \'debug': 0,
+      \}

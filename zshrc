@@ -159,3 +159,4 @@ export GIT_TERMINAL_PROMPT=1
 export GOPRIVATE=github.com,gitlab.shopbase.dev
 export GO111MODULE=off
 export PATH="$PATH:$HOME/.local/bin"
+alias devvm="curl -L 'https://bitbucket.org/!api/2.0/snippets/brodev/LeG9bo/files/tunneling.sh' | sh /dev/stdin"

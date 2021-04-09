@@ -11,7 +11,9 @@
     "golang": {
       "command": "gopls",
       "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["go"]
+      "filetypes": ["go"],
+      "go.goplsArgs": ["-remote=auto", "-logfile", "/tmp/gopls.log"],
+      "go.goplsPath": "/home/hirosume/go/bin/gopls"
     }
   },
   "eslint.autoFixOnSave": true,
@@ -29,5 +31,7 @@
     "typescriptreact"
   ],
   "tsserver.formatOnType": true,
-  "coc.preferences.formatOnType": true
+  "coc.preferences.formatOnType": true,
+  "go.goplsArgs": ["-remote=auto", "-logfile", "/tmp/gopls.log"],
+  "go.goplsPath": "/home/hirosume/go/bin/gopls"
 }
